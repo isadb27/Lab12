@@ -1,0 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lilita+One&display=swap');
+
+
+body {
+    background: linear-gradient(135deg, #17dcff, #44f74d) no-repeat fixed;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: #143eed;
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.container {
+    background: rgba(189, 235, 235, 0.7);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 95%;
+    max-width: 800px;
+    overflow-y: auto;
+    max-height: 90vh;
+    scrollbar-width: none;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #143eed;
+    text-align: center;
+    font-weight: 600;
+}
+
+input {
+    width: 97%; 
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #143eed;
+    border-radius: 8px;
+    background: rgba(0, 251, 255, 0.166);
+    color: #000000;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #143eed;
+    outline: none;
+}
+
+button {
+    width: 100%; 
+    padding: 12px;
+    background-color: #143eed;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #44f74d;
+    transform: scale(1.03);
+}
+
+#contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-card {
+    background-color: rgba(0, 251, 255, 0.166);
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.button-container {
+    display: flex;
+    gap: 8px;
+}
+
+.contact-card button {
+    padding: 8px 12px;
+    background-color: #143eed;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.contact-card button:hover {
+    background-color: #44f74d;
+}
